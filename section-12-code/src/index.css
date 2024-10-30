@@ -1,0 +1,19 @@
+.dropdownpage-css {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.chevron {
+  padding-left: 10px;
+}
+
+.options {
+  padding-top: 10px;
+}
+
+
