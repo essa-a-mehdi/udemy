@@ -41,7 +41,7 @@ function App() {
         <Route path="/dropdown">
           <DropdownPage />
         </Route>
-        <Route path="/modal">
+        <Route path="/modal"> 
           <ModalPage />
         </Route>
         <Route path="*">

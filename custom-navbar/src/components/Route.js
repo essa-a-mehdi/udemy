@@ -6,7 +6,11 @@ export default function Route({ path, children }) {
 
     if (path === currentPath) {
         return children;
-    } else {
-        return null;
+    } else if (path === "*") {
+        if (currentPath !== "/accordion" && currentPath !== "/dropdown" && currentPath !== "/" && currentPath !== "/modal") {
+            return children;
+        }
     }
+    
+    return null;
 }
