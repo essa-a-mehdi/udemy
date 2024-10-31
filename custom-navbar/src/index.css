@@ -46,9 +46,8 @@
   color: #333;
   text-decoration: none; 
   margin-bottom: 10px;
-  transition: background-color 0.3s;
 }
 
 .sidebar-links a:hover {
-  background-color: #ddd;
+  background-color: gray;
 }
