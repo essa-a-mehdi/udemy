@@ -2,6 +2,7 @@ import Link from './components/Link';
 import AccordionPage from './pages/AccordionPage'
 import DropdownPage from './pages/DropdownPage';
 import Route from './components/Route';
+import Sidebar from './components/Sidebar';
 
 function App() {
 
@@ -28,8 +29,7 @@ function App() {
 
   return (
     <div>
-      <Link to="/accordion">AccordionPage</Link>
-      <Link to="/dropdown">DropdownPage</Link>
+      <Sidebar />
       <div>
         <Route path="/accordion">
           <AccordionPage items={items}/>
