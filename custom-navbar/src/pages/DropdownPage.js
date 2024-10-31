@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Dropdown from '../components/Dropdown';
 
 function DropdownPage() {
@@ -14,9 +14,17 @@ function DropdownPage() {
     { label: 'Blue', value: 'blue' },
   ];
 
+  useEffect(() => {
+    if (selection) {
+      document.body.style.backgroundColor = selection.value;
+    } else {
+      document.body.style.backgroundColor = '';
+    }
+  }, [selection]);
+
   return (
     <div>
-        <h2>Select a colour:</h2>
+      <h2>Select a colour:</h2>
       <Dropdown options={options} value={selection} onChange={handleSelect} />
     </div>
   );
