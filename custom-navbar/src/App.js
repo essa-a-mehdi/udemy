@@ -32,10 +32,10 @@ function App() {
       <Link to="/dropdown">DropdownPage</Link>
       <div>
         <Route path="/accordion">
-        <AccordionPage items={items}/>
+          <AccordionPage items={items}/>
         </Route>
         <Route path="/dropdown">
-        <DropdownPage />
+          <DropdownPage />
         </Route>
       </div>
     </div>
