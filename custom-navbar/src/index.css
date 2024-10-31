@@ -19,5 +19,15 @@
 
 .sidebar-links {
   display: flex;
-  flex-direction: column; /* Stack links vertically */
+  flex-direction: column; 
+}
+
+.modal {
+  position: fixed; 
+  top: 50%; 
+  left: 50%;
+  background-color: white;
+  box-shadow: 0 2px 10px gray;
+  padding: 10px;
+
 }
