@@ -1,5 +1,8 @@
 import { useState } from 'react';
-import Dropdown from './components/Dropdown';
+import Link from './components/Link';
+import AccordionPage from './components/AccordionPage'
+import DropdownPage from './pages/DropdownPage';
+import Route from './components/Route';
 
 function App() {
   const [selection, setSelection] = useState(null);
@@ -16,7 +19,16 @@ function App() {
 
   return (
     <div>
-      <Dropdown options={options} value={selection} onChange={handleSelect} />
+      <Link to="/accordion">AccordionPage</Link>
+      <Link to="/dropdown">DropdownPage</Link>
+      <div>
+        <Route path="/accordion">
+        <AccordionPage />
+        </Route>
+        <Route path="/dropdown">
+        <DropdownPage />
+        </Route>
+      </div>
     </div>
   );
 }
