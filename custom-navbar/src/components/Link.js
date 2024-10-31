@@ -7,9 +7,15 @@ export default function Link({ to, children }) {
     const { navigate } = useContext(NavigationContext);
 
     const handleClick =(event) => {
+        console.log(event);
+        console.log(event.ctrl);
+        console.log(event.metaKey);
+        if (event.metaKey) {
+            return;
+        }
         event.preventDefault();
         navigate(to);
     };
     
-    return <a onClick={handleClick}>{children}</a>
+    return <a href={to} onClick={handleClick}>{children}</a>
 }
