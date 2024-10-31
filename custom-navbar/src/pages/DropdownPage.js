@@ -16,6 +16,7 @@ function DropdownPage() {
 
   return (
     <div>
+        <h2>Select a colour:</h2>
       <Dropdown options={options} value={selection} onChange={handleSelect} />
     </div>
   );

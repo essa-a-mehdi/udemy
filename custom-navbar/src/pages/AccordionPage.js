@@ -10,6 +10,9 @@ export default function AccordionPage({ items }) {
 
   return (
     <div>
+        <h1>
+            Accordion!
+        </h1>
       {items.map((item, index) => {
         const isExpanded = index === expandedIndex;
         const icon = isExpanded ? <GoChevronDown /> : <GoChevronLeft />;

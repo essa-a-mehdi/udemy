@@ -9,6 +9,7 @@ export default function ModalPage() {
     
     return (
         <div>
+            <h2>A modal demonstration</h2>
             <button onClick={handleClick}>Open modal text</button>
             {showModal && <Modal />}
         </div>
