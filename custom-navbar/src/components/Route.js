@@ -7,7 +7,7 @@ export default function Route({ path, children }) {
     if (path === currentPath) {
         return children;
     } else if (path === "*") {
-        if (currentPath !== "/accordion" && currentPath !== "/dropdown" && currentPath !== "/" && currentPath !== "/modal") {
+        if (currentPath !== "/accordion" && currentPath !== "/table" && currentPath!== "/dropdown" && currentPath !== "/" && currentPath !== "/modal") {
             return children;
         }
     }
