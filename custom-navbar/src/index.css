@@ -66,3 +66,10 @@ th, td {
 th {
   background-color: #f2f2f2;
 }
+
+.fruitcolor {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid #ddd; /* Optional: adds a border around the square */
+}

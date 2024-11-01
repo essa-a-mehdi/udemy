@@ -10,8 +10,10 @@ export default function TablePage() {
 
     const config = [
         { label: 'Name', render: (fruit) => fruit.name},
-        { label: 'Colour', render: (fruit) => fruit.color},
-        { label: 'Score', render: (fruit) => fruit.score},
+        { label: 'Colour', render: (fruit) => <div className="fruitcolor">{fruit.color}</div>},
+        { label: 'Score', render: (fruit) => (
+        <div className="fruitcolor" style={{ backgroundColor: fruit.color }}></div>
+        )},
         { label: 'Score Squared', render: (fruit) => fruit.score ** 2},
     ];
 
