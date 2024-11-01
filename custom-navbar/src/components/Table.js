@@ -3,12 +3,19 @@ export default function Table({ data }) {
         return (
             <tr key={fruit.name}>
                 <td>{fruit.name}</td>
-                <td>{fruit.color}</td>
+                <td>
+                    <div style={{
+                        width: '20px',
+                        height: '20px',
+                        backgroundColor: fruit.color,
+                    }}></div>
+                </td>
                 <td>{fruit.score}</td>
             </tr>
-        )
-    })
-    return(
+        );
+    });
+
+    return (
         <table>
             <thead>
                 <tr>
@@ -19,5 +26,5 @@ export default function Table({ data }) {
             </thead>
             <tbody>{renderedRows}</tbody>
         </table>
-    )
+    );
 }
