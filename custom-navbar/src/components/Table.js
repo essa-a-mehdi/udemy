@@ -1,17 +1,19 @@
 export default function Table({ data, config }) {
-
     const renderedHeaders = config.map((column) => {
-        return <th key={column.label}>{column.label}</th>
-    })
+        return <th key={column.label}>{column.label}</th>;
+    });
 
     const renderedRows = data.map((fruit) => {
-        return (
-            <tr key={fruit.name}>
-                <td>{config[0].render(fruit)}</td>
-                <td>{config[1].render(fruit)}</td>
-                <td>{config[2].render(fruit)}</td>
-            </tr>
-        );
+        const renderedCells = [];
+        const length = config.length;
+
+        for (let i = 0; i < length; i++) {
+            renderedCells.push(
+                <td key={config[i].label}>{config[i].render(fruit)}</td>
+            );
+        }
+
+        return <tr key={fruit.name}>{renderedCells}</tr>;
     });
 
     return (
@@ -19,7 +21,9 @@ export default function Table({ data, config }) {
             <thead>
                 <tr>{renderedHeaders}</tr>
             </thead>
-            <tbody>{renderedRows}</tbody>
+            <tbody>
+                {renderedRows}
+            </tbody>
         </table>
     );
 }
