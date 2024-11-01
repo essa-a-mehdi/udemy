@@ -6,9 +6,15 @@ export default function TablePage() {
         { name: 'Apple', color: 'red', score: 3},
         { name: 'Banana', color: 'yellow', score: 1},
         { name: 'Lime', color: 'green', score: 4},
-
     ]
+
+    const config = [
+        { label: 'Name'},
+        { label: 'Colour'},
+        { label: 'Score'},
+    ];
+
     return <div>
-        <Table data={data}/>
+        <Table data={data} config={config}/>
     </div>
 }
