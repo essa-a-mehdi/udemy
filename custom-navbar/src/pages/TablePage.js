@@ -12,6 +12,7 @@ export default function TablePage() {
         { label: 'Name', render: (fruit) => fruit.name},
         { label: 'Colour', render: (fruit) => fruit.color},
         { label: 'Score', render: (fruit) => fruit.score},
+        { label: 'Score Squared', render: (fruit) => fruit.score ** 2},
     ];
 
     return <div>
