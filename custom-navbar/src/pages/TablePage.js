@@ -9,9 +9,9 @@ export default function TablePage() {
     ]
 
     const config = [
-        { label: 'Name'},
-        { label: 'Colour'},
-        { label: 'Score'},
+        { label: 'Name', render: (fruit) => fruit.name},
+        { label: 'Colour', render: (fruit) => fruit.color},
+        { label: 'Score', render: (fruit) => fruit.score},
     ];
 
     return <div>
