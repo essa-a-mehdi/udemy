@@ -7,6 +7,7 @@ export default function Sidebar() {
             <Link to="/accordion">AccordionPage</Link>
             <Link to="/dropdown">DropdownPage</Link>
             <Link to="/modal">ModalPage</Link>
+            <Link to="/table">TablePage</Link>
         </div>
     )
 }

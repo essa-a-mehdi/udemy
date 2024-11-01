@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar';
 import ModalPage from './pages/ModalPage';
 import Modal from './components/Modal';
 import ErrorPage from './pages/ErrorPage';
+import TablePage from './pages/TablePage';
 
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
         </Route>
         <Route path="*">
           <ErrorPage />
+        </Route>
+        <Route path="/table">
+          <TablePage />
         </Route>
       </div>
     </div>
