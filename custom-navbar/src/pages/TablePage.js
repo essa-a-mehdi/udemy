@@ -2,6 +2,6 @@ import Table from "../components/Table";
 
 export default function TablePage() {
     return <div>
-        <Table />;
+        <Table />
     </div>
 }
