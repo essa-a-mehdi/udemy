@@ -15,7 +15,7 @@ export default function TablePage() {
         <div className="fruitcolor" style={{ backgroundColor: fruit.color }}></div>
         )},
         { label: 'Score Squared', render: (fruit) => fruit.score ** 2,
-            header: () => <th>Score</th>
+            header: () => <th>Scoreboard</th>
         },
     ];
 
